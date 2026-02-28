@@ -86,15 +86,24 @@ By deploying this model, a company can:
 - Scikit-learn
 - Matplotlib / Seaborn
 
-## Project Structure
+##  Project Structure
 
+```
 business-ai-customer-churn/
 │
 ├── data/
+│   └── telco_churn.csv
+│
 ├── notebooks/
 │   └── 01_eda.ipynb
+│
 ├── src/
 │   └── train_model.py
+│
 ├── results/
+│   └── roc_curve.png
+│
+├── .gitignore
 ├── requirements.txt
 └── README.md
+```
