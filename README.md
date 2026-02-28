@@ -42,13 +42,26 @@ The objective of this project is to build a predictive model that identifies hig
     - Recall (Churn class)
     - ROC-AUC
 
-## Model Performance:
+##  Model Comparison
 
-- Accuracy: ~77%
-- Recall (Churn class): 65% (after threshold tuning)
-- ROC-AUC: ~0.83
+| Model                | Accuracy | Recall (Churn) | ROC-AUC |
+|----------------------|----------|----------------|---------|
+| Logistic Regression  | 0.78     | 0.65           | 0.83    |
+| Random Forest        | 0.77     | 0.59           | 0.82    |
 
-The model demonstrates strong ability to distinguish churn vs non-churn customers.
+Logistic Regression demonstrated better recall and ROC-AUC performance, making it the preferred model for churn detection in this case.
+
+##  Top Feature Drivers (Random Forest)
+
+![Random Forest Feature Importance](results/rf_feature_importance.png)
+
+The most influential predictors of churn include:
+
+- Total Charges
+- Monthly Charges
+- Tenure
+- Fiber Optic Internet Service
+- Electronic Check Payment Method
 
 ##  ROC Curve
 
